@@ -1,0 +1,17 @@
+{layout '../@layout.latte'}
+
+{block content}
+    {form form}
+    
+    <div class="form-group">
+    <div id="timer">Timer: <span id="countdown">19</span><span>:</span><span id="seconds">59</span></div>
+        <label>{$form['questions']->caption}</label>
+        {$form['questions']->getControl()}
+    </div>
+    <label for="answer">Answer:</label>
+    <textarea name="answer" id="answer"></textarea>
+    <div id="timer"></div>
+    {input send}
+    {/form}
+    
+{/block}

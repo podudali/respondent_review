@@ -1,0 +1,15 @@
+{block content}
+
+{form loginForm}
+  <div id="name">Name:</div>{input username}
+    <div id="surname">Surname:</div>{input surname}
+
+    <div class="form-group">
+        <label>{$form['questions']->caption}</label>
+        {$form['questions']->getControl()}
+    </div>
+
+    {input login}
+{/form}
+
+{/block}
